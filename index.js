@@ -283,7 +283,7 @@ window.initFirebaseApp = function(config, redirect = true) {
             setTimeout(function() { window._firebaseAuthRedirecting = false; }, 1500); // Reset flag setelah 1.5 detik
           } else if (!user && currentPage !== 'login.html') {
             window._firebaseAuthRedirecting = true;
-            window.loadPage('login.html', 'main-app-container');
+            window.loadPage('/p/login.html', 'main-app-container');
             setTimeout(function() { window._firebaseAuthRedirecting = false; }, 1500); // Reset flag setelah 1.5 detik
           }
         }, 200);
